@@ -9,3 +9,8 @@
 	width: 400px;
 	margin: auto;
 }
+
+.ui.violet.button:focus,
+.ui.violet.buttons .button:focus {
+	background-color: #6435c9;
+}
