@@ -13,9 +13,10 @@ function Home() {
 		useQuery(FETCH_POSTS_QUERY);
 
 	return (
-		<Grid columns={3}>
+		<Grid stackable centered columns={3}>
 			<Grid.Row className='page-title'>
-				<h1>Recent Posts</h1>
+				<h1>ChatVault</h1>
+				<h2>Recent Posts</h2>
 			</Grid.Row>
 			<Grid.Row>
 				{user && (

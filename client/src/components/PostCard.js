@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Card, Icon, Label, Button, Popup } from 'semantic-ui-react';
+import { Card, Icon, Label, Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
 
@@ -14,9 +14,9 @@ function PostCard({
 	const { user } = useContext(AuthContext);
 
 	return (
-		<Card fluid>
+		<Card stackable='true'>
 			<Card.Content>
-				<Card.Header> {username}</Card.Header>
+				<Card.Header>{username}</Card.Header>
 				<Card.Meta as={Link} to={`/posts/${id}`}>
 					{' '}
 					{moment(createdAt).fromNow(true)}
